@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+}
+body {
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-taobao-vector-cartoon-neat-study-desk-table-home-illustration-table-lamp-image_130341.jpg);
+  color: white;
+   background-size:100vw 100vh;   
+   background-repeat: no-repeat;
+   font-family: 'Dancing Script', cursive;
+   height: fit-content;
+   width: fit-content;
+   margin: 70px auto;
+   border: 3px solid black;
+   box-shadow: 10px 10px 10px rgb(46, 45, 44);
+   padding: 10px;
+}
+header {
+  font-size: 20px;
+  margin: auto;
+  color: black;
+}
+header,
+form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  margin-left: 15px;
+}
+form input:focus{
+  border: 3px solid  rgb(87, 133, 224); 
+  outline: none; 
+}
+form button {
+  color: white;
+  background: rgb(87, 133, 224);
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+form button:hover {
+  background:  rgb(87, 133, 224);
+  color: white;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+.todo {
+  margin: 0.5rem;
+  height: 40px;
+  background: white;
+  font-size: 15px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  border-radius: 10px;
+  width: 450px;
+}
+.filter-todo {
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.todo li {
+  flex: 1;
+  border-radius: 10px;
+}
+.complete-btn {
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  height: 40px;
+  background: rgb(5, 185, 86);
+ 
+}
+.trash-btn{
+  background: #dc062a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 0 10px 10px 0;
+  height: 40px;
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+  border-radius: 10px;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.fall {
+  opacity: 0;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color:  rgb(87, 133, 224);
+  font-family: 'Dancing Script', cursive;
+  cursor: pointer;
+  width: 12rem; 
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+  background:  rgb(87, 133, 224);
+  cursor: pointer;
+  pointer-events: none;
+}
+
